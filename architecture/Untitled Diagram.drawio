@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="bBq7xQy2lS0imOHYVqQ9">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CySEKdAXGFQOLCPIDndp-5" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Employee Analytics Data Engineering Pipeline" vertex="1">
+          <mxGeometry height="60" width="350" x="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-12" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Employee Dataset (CSV)" vertex="1">
+          <mxGeometry height="50" width="180" x="325" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-13" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="AWS S3 (Raw Bucket)" vertex="1">
+          <mxGeometry height="60" width="120" x="355" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-14" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Google Colab + PySpark ETL Pipeline" vertex="1">
+          <mxGeometry height="60" width="158" x="340" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-15" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="• Download data using boto3             │&lt;br/&gt;       │ • Rename columns                        │&lt;br/&gt;       │ • Remove duplicates                     │&lt;br/&gt;       │ • Trim whitespace                       │&lt;br/&gt;       │ • Convert data types                    │&lt;br/&gt;       │ • Data validation                       │&lt;br/&gt;       │ • Feature engineering" vertex="1">
+          <mxGeometry height="210" width="350" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-16" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;nbsp;Parquet File (.parquet)" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-17" edge="1" parent="1" source="CySEKdAXGFQOLCPIDndp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CySEKdAXGFQOLCPIDndp-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;nbsp;AWS S3 (Processed Bucket)" vertex="1">
+          <mxGeometry height="60" width="150" x="350" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="CySEKdAXGFQOLCPIDndp-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Power BI HR Analytics Dashboard" vertex="1">
+          <mxGeometry height="60" width="240" x="310" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
