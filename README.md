@@ -11,7 +11,7 @@ This project demonstrates an end-to-end ETL pipeline built using PySpark and AWS
 
 ## Architecture
 
-![Architecture](architecture/architecture.png)
+![Architecture](architecture/Untitled Diagram.drawio.png)
 
 ---
 
@@ -93,7 +93,7 @@ Processed data is stored in Parquet format for efficient analytical workloads.
 
 ## Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ---
 
